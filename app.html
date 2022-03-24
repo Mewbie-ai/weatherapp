@@ -5,14 +5,42 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>weather app 😎</title>
-  <link rel="shortcut icon" href="ayaya.jpeg" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="normalize.css">
+  <link rel="shortcut icon" href="src/img/ayaya.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/normalize.css">
 </head>
 <body>
-  <h1>Weather Forecast Site</h1>
+  <div class="wp">
+    <div class="cont">
+      <div class="searchbar">
+        <input type="search" name="search" id="search" value="London" placeholder="city/country eg:London">
+        <svg id="searchicon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+      </div>
+      <div>
+        <span id="temp">
+          <p id="celsius">34°C</p>
+          <p id="fahrenheit">173°F</p>
+        </span>
+        <h1 id="city"></h1>
+      </div>
 
-  <div id="wp" class="wp"></div>
-  <script src="weather.js"></script>
+      <h3 id="weather">
+      </h2>
+      <p id="time">00:00</p>
+    </div>
+  </div>
+  <footer>
+    <nav>
+      <p>
+        An Odin Project <img src="src/img/odin.svg" height="32" alt="">
+      </p>
+      <p>
+        Powered by <img src="src/img/openweather.png" height="32" alt="OpenWeather">
+      </p>
+    </nav>
+  </footer>
+  <script src="src/js/weather.js"></script>
 </body>
 </html> 
